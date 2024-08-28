@@ -1,30 +1,30 @@
-function appendNumber(number) {
+function pakaiAngka(number) {
     const display = document.getElementById('display');
     display.value +=   number;
 }
 
-function appendOperator(operator) {
+function pakaiOperator(operator) {
     const display = document.getElementById('display');
     display.value += ' ' + operator + ' ';
 }
 
-function appendDot() {
+function titikNya() {
     const display = document.getElementById('display');
     if (!display.value.includes('.')) {
         display.value += '.';
     }
 }
 
-function clearDisplay() {
+function hapusSemua() {
     document.getElementById('display').value = '';
 }
 
-function deleteLast() {
+function hapusTerakhir() {
     const display = document.getElementById('display');
     display.value = display.value.slice(0, -1);
 }
 
-function calculate() {
+function hasil() {
     const display = document.getElementById('display');
     try {
         display.value = eval(display.value.replace(/ /g, ''));
