@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator PROMT</title>
+</head>
+<body>
+
+    <h1>Kalkulator</h1>
+    <button id="kalkulator">Mari Mengitung</button>
+    <script>
+        document.getElementById("kalkulator").addEventListener("click", function() {
+        var operasi = prompt("Pilih operasi:\n1. Penjumlahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian\n5. Modulus");
+        var angka1 = parseInt(prompt("Masukkan angka pertama:"));
+        var angka2 = parseInt(prompt("Masukkan angka kedua:"));
+        var hasil;
+
+        switch (operasi) {
+        case '1':
+            hasil = angka1 + angka2;
+            break;
+        case '2':
+            hasil = angka1 - angka2;
+            break;
+        case '3':
+            hasil = angka1 * angka2;
+            break;
+        case '4':
+            hasil = angka1 / angka2;
+            break;
+        case '5':
+            hasil = angka1 % angka2;
+            break;
+       }
+       
+       if (hasil) {
+        alert("Hasil: " + hasil);
+    }});
+    </script>
+</body>
+</html> 

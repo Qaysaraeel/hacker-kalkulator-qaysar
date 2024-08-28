@@ -1,6 +1,6 @@
 function appendNumber(number) {
     const display = document.getElementById('display');
-    display.value += number;
+    display.value +=   number;
 }
 
 function appendOperator(operator) {
